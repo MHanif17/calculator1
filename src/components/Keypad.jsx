@@ -31,12 +31,12 @@ function Keypad({ calculate }) {
           onClick={calculate}
           variant={
             key === "AC"
-              ? "bg-red-500 hover:bg-red-300"
+              ? "bg-red-500 hover:bg-red-300 active:bg-red-400 transition-colors"
               : key === "DE"
-              ? "bg-orange-500 hover:bg-orange-300"
+              ? "bg-orange-500 hover:bg-orange-300 active:bg-orange-400 transition-colors"
               : key === "="
-              ? "bg-emerald-500 hover:bg-emerald-300 col-span-2"
-              : "bg-slate-700 hover:bg-slate-400"
+              ? "bg-emerald-500 hover:bg-emerald-300 active:bg-emerald-400 col-span-2 transition-colors"
+              : "bg-slate-700 hover:bg-slate-400 active:bg-slate-500 transition-colors"
           }
         />
       ))}
